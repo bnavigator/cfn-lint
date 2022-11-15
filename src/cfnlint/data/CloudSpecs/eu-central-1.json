@@ -5619,7 +5619,10 @@
      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-bucketaccountid",
      "PrimitiveType": "String",
      "Required": false,
-     "UpdateType": "Immutable"
+     "UpdateType": "Immutable",
+     "Value": {
+      "ValueType": "AWS::S3::AccessPoint.BucketAccountId"
+     }
     },
     "Name": {
      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-name",
@@ -8280,6 +8283,9 @@
   "AWS::Route53Resolver::ResolverRule.ResolverEndpointId": "CACHED",
   "AWS::Route53Resolver::ResolverRule.RuleType": "CACHED",
   "AWS::S3::AccessPoint.Bucket": "CACHED",
+  "AWS::S3::AccessPoint.BucketAccountId": {
+   "AllowedPatternRegex": "^\\d{12}$"
+  },
   "AWS::S3::AccessPoint.Name": "CACHED",
   "AWS::S3::AccessPoint.VpcConfiguration.VpcId": "CACHED",
   "AWS::S3::Bucket.AccelerateConfiguration.AccelerationStatus": "CACHED",
